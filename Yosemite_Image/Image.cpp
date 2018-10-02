@@ -75,11 +75,9 @@ public:
                     file >> ARR(i,j,red);
                     file >> ARR(i,j,green);
                     file >> ARR(i,j,blue);
-                    
                 }
                 
             }
-            
             
         }
         else{
@@ -135,7 +133,25 @@ public:
     }
     
     // Converts RGB to grayscale
-    void toGrayScale ();
+    void toGrayScale (){
+        for(int i = 0; i < 807; i++){
+            for(int j = 0; j < 1038; j ++){
+                int R, G, B, grey = 0;
+                
+                R = ARR(i,j,red);
+                G = ARR(i,j,green);
+                B = ARR(i,j,blue);
+                grey = (R + G + B) / 3;
+                ARR(i,j,red) = grey;
+                ARR(i,j,green) = grey;
+                ARR(i,j,blue) = grey;
+                
+                
+                
+            }
+            
+        }
+    }
     
     // flips the image  horizontally each row of pixesl
     void flipHorizontal();
@@ -147,7 +163,9 @@ public:
     void negateBlue();
     
     
-    
+    void resetImage(){
+        
+    }
     
     
 };
