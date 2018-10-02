@@ -21,7 +21,7 @@ using namespace bridges;
 int main() {
 
     Bridges::initialize(3, "lphung1@uncc.edu", "234291986029"); //enter's api credentials
-    Bridges::setTitle("Greedy Algorithm");
+    Bridges::setTitle("Yosemite Image Processing");
     
     Image yosemite("yosemite.ppm");
     

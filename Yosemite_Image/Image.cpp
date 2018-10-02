@@ -212,7 +212,7 @@ public:
         string type, resolution, maxValue;
         file.open(fileName);
         if (file.is_open()){
-            cout << "File open\n";
+            //cout << "File open\n";
             getline(file, type); //to skip first 3 lines
             getline(file, resolution);
             getline(file, maxValue);
@@ -272,7 +272,7 @@ public:
         
         file.open(fileName);
         if (file.is_open()){
-            cout << "File open\n";
+            //cout << "File open\n";
             getline(file, type); //to skip first 3 lines
             getline(file, resolution);
             getline(file, maxValue);
